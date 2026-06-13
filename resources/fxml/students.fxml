@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12.0" styleClass="content-bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentController">
+    <padding><Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/></padding>
+    <children>
+        <Label text="Student Management" styleClass="section-title"/>
+        <HBox spacing="8.0">
+            <children>
+                <TextField fx:id="nameField" promptText="Student Name"/>
+                <TextField fx:id="rollField" promptText="Roll Number"/>
+                <TextField fx:id="departmentField" promptText="Department"/>
+                <TextField fx:id="semesterField" promptText="Semester"/>
+            </children>
+        </HBox>
+        <HBox spacing="8.0">
+            <children>
+                <Button text="Add" onAction="#addStudent" styleClass="accent-button"/>
+                <Button text="Update" onAction="#updateStudent" styleClass="nav-button"/>
+                <Button text="Delete" onAction="#deleteStudent" styleClass="nav-button"/>
+                <Button text="Clear" onAction="#clearFields" styleClass="nav-button"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <TextField fx:id="searchField" promptText="Search..."/>
+                <Button text="Search" onAction="#searchStudents" styleClass="nav-button"/>
+            </children>
+        </HBox>
+        <TableView fx:id="studentTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="nameCol" text="Student Name" prefWidth="200.0"/>
+                <TableColumn fx:id="rollCol" text="Roll Number" prefWidth="140.0"/>
+                <TableColumn fx:id="deptCol" text="Department" prefWidth="160.0"/>
+                <TableColumn fx:id="semCol" text="Semester" prefWidth="100.0"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
