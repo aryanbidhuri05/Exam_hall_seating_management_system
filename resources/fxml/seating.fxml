@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12.0" styleClass="content-bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExamController">
+    <padding><Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/></padding>
+    <children>
+        <Label text="Exam Management" styleClass="section-title"/>
+        <HBox spacing="8.0">
+            <children>
+                <TextField fx:id="examNameField" promptText="Exam Name"/>
+                <TextField fx:id="subjectField" promptText="Subject Name"/>
+                <TextField fx:id="departmentField" promptText="Department"/>
+                <TextField fx:id="semesterField" promptText="Semester"/>
+                <DatePicker fx:id="examDatePicker"/>
+            </children>
+        </HBox>
+        <HBox spacing="8.0">
+            <children>
+                <Button text="Add Exam" onAction="#addExam" styleClass="accent-button"/>
+                <Button text="Clear" onAction="#clearFields" styleClass="nav-button"/>
+            </children>
+        </HBox>
+        <TableView fx:id="examTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="examNameCol" text="Exam" prefWidth="180.0"/>
+                <TableColumn fx:id="subjectCol" text="Subject" prefWidth="180.0"/>
+                <TableColumn fx:id="deptCol" text="Department" prefWidth="160.0"/>
+                <TableColumn fx:id="semCol" text="Semester" prefWidth="100.0"/>
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="140.0"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
