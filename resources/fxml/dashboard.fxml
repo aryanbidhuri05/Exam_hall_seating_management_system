@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" prefHeight="700.0" prefWidth="1100.0" styleClass="root-bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+    <left>
+        <VBox spacing="12.0" prefWidth="220.0" styleClass="nav-panel">
+            <padding><Insets top="20.0" right="15.0" bottom="20.0" left="15.0"/></padding>
+            <children>
+                <Label text="Dashboard" styleClass="title-label"/>
+                <Button text="Students" onAction="#openStudents" styleClass="nav-button"/>
+                <Button text="Exams" onAction="#openExams" styleClass="nav-button"/>
+                <Button text="Shifts &amp; Timings" onAction="#openShifts" styleClass="nav-button"/>
+                <Button text="Seating Generation" onAction="#openSeating" styleClass="nav-button"/>
+                <Region VBox.vgrow="ALWAYS"/>
+                <Button text="Logout" onAction="#logout" styleClass="accent-button"/>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>
