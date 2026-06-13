@@ -1,0 +1,59 @@
+.root {
+    -fx-font-family: "Times New Roman";
+}
+
+.root-bg {
+    -fx-background-color: #0a3d91;
+}
+
+.content-bg {
+    -fx-background-color: #e0e0e0;
+}
+
+.nav-panel {
+    -fx-background-color: #001f54;
+}
+
+.title-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.section-title {
+    -fx-text-fill: #333333;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.muted-label {
+    -fx-text-fill: #333333;
+}
+
+.card-panel {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 14;
+}
+
+.nav-button {
+    -fx-background-color: #001f54;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+
+.accent-button {
+    -fx-background-color: #4169e1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.text-field, .password-field, .date-picker {
+    -fx-background-radius: 6;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #001f54;
+    -fx-border-width: 1;
+}
