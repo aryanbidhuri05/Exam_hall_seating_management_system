@@ -24,6 +24,7 @@ Interactive login page
 Username and password authentication
 Error alerts for invalid credentials
 Logout functionality
+
 2. Student Management Module
 
 Add student details
@@ -37,6 +38,7 @@ Student Name
 Roll Number
 Department
 Semester
+
 3. Exam Management Module
 
 Add exam details
@@ -50,11 +52,13 @@ Subject Name
 Department
 Semester
 Exam Date
+
 4. Shift Management Module
 
 Create multiple exam shifts
 Assign start and end timings
 Manage shift scheduling
+
 5. Automatic Seating Arrangement Generation
 
 Automatically allocates seats
@@ -70,12 +74,14 @@ Semester
 Exam Name
 Hall Number
 Seat Number
+
 6. Export Feature
 
 Users can download generated seating arrangements in:
 
 PDF format
 CSV format
+
 7. Refresh Functionality
 
 Reloads updated database records instantly
@@ -176,6 +182,7 @@ USE intelliseat;
 Then execute:
 
 schema.sql
+
 Step 2: Configure JDBC
 
 Open:
@@ -186,6 +193,7 @@ Update:
 String url = "jdbc:mysql://localhost:3306/intelliseat";
 String username = "root";
 String password = "yourpassword";
+
 Step 3: Configure JavaFX
 
 Add JavaFX SDK libraries to the project.
@@ -196,6 +204,7 @@ VM Arguments:
 Example:
 
 --module-path "C:\openjfx-21.0.11_windows-x64_bin-sdk\javafx-sdk-21.0.11\lib" --add-modules javafx.controls,javafx.fxml
+
 Step 4: Run the Project
 
 Run:
