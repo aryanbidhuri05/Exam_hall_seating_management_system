@@ -236,4 +236,4 @@ The project provides a practical demonstration of Java desktop application devel
 
 Developed By
 
-Kritika Dhiman B.Tech Student Graphic Era Hill University
+Aryan B.Tech Student Graphic Era Hill University
