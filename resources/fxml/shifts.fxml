@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12.0" styleClass="content-bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShiftController">
+    <padding><Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/></padding>
+    <children>
+        <Label text="Shift and Timing Management" styleClass="section-title"/>
+        <HBox spacing="8.0">
+            <children>
+                <TextField fx:id="shiftNameField" promptText="Shift Name"/>
+                <TextField fx:id="startTimeField" promptText="Start Time (HH:mm)"/>
+                <TextField fx:id="endTimeField" promptText="End Time (HH:mm)"/>
+            </children>
+        </HBox>
+        <HBox spacing="8.0">
+            <children>
+                <Button text="Add Shift" onAction="#addShift" styleClass="accent-button"/>
+                <Button text="Clear" onAction="#clearFields" styleClass="nav-button"/>
+            </children>
+        </HBox>
+        <TableView fx:id="shiftTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="shiftNameCol" text="Shift Name" prefWidth="260.0"/>
+                <TableColumn fx:id="startCol" text="Start Time" prefWidth="180.0"/>
+                <TableColumn fx:id="endCol" text="End Time" prefWidth="180.0"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
